@@ -1,0 +1,18 @@
+Conteúdo:
+TCC.pdf: texto integral do TCC, recomendada a leitura para entender o contexto dos arquivos aqui disponíveis 
+
+pre-processamento: código que gera o csv etiquetas.csv utilizado pelos datasets (note que no código dos datasets ele foi renomeado para etiquetas2.csv)
+- preprocessing.py - código utilizados para gerar o arquivo, fazendo um pre-processamento do dataset "aeiouadô"
+- dataset.csv - dataset aeiouadô contendo a representação comum das palavras e também fonética
+- newRepresentationDictKeys.csv - arquivo usado pelo preprocessing.py para gerar um dicionario com chaves da etiquetagem proposta
+- newRepresentationDictValues.csv - arquivo usado pelo preprocessing.py para gerar um dicionario com valores da etiquetagem proposta
+- phoneticsDict.csv - arquivo usado pelo preprocessing.py para gerar um dicionario com valores fonéticos
+- badWords.csv - palavras que são puladas no processamento do dataset pois estavam causando problemas
+
+notebooks/: notebooks Jupyter utilizados para treinar os modelos apresentados no TCC com as diferentes representações
+- Silabas.ipynb: treina os modelos com todas as representações descritas no TCC para a representação comum de silabas
+- Fonetica.ipynb: treina os modelos com todas as representações descritas no TCC para a representação fonética das palavras
+- Etiquetas.ipynb: treina os modelos com todas as representações descritas no TCC para a representação utilizando a etiquetagem proposta
+- etiquetas2.csv: CSV contendo um vocabulário de palavras utilizado para treinar os modelos nas representações acima
+
+recursos-iniciais: alguns papers relacionados ao tema e outros arquivos relacionados, como datasets e links
